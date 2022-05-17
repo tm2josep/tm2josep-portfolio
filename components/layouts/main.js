@@ -1,7 +1,10 @@
 import Head from "next/head"
-import { Box, Container } from "@chakra-ui/react"
+import { Box, Container, useColorMode } from "@chakra-ui/react"
+import ThemeToggleButton from "../theme-toggle-button"
+import Navbar from "../navbar"
 
 const Main = ({ children, router }) => {
+    const { colorMode, toggleColorMode } = useColorMode()
     return (
         <Box as="main" pb={8}>
             <Head>
@@ -11,7 +14,7 @@ const Main = ({ children, router }) => {
                 />
                 <title>Mammen Joseph - Homepage</title>
             </Head>
-
+            <Navbar path={router.asPath} />
             <Container maxW="container.md" pt={14}>
                 {children}
             </Container>
