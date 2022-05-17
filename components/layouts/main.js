@@ -1,10 +1,8 @@
 import Head from "next/head"
-import { Box, Container, useColorMode } from "@chakra-ui/react"
-import ThemeToggleButton from "../theme-toggle-button"
+import { Box, Container } from "@chakra-ui/react"
 import Navbar from "../navbar"
 
 const Main = ({ children, router }) => {
-    const { colorMode, toggleColorMode } = useColorMode()
     return (
         <Box as="main" pb={8}>
             <Head>

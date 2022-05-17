@@ -11,10 +11,10 @@ import {
     MenuList,
     MenuButton,
     IconButton,
-    useColorModeValue
 } from "@chakra-ui/react"
 import ThemeToggleButton from "./theme-toggle-button"
 import { HamburgerIcon } from "@chakra-ui/icons"
+import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, children }) => {
     const active = path === href
@@ -74,9 +74,48 @@ const Navbar = props => {
                     <LinkItem href="/projects" path={path}>
                         Projects
                     </LinkItem>
+                    <Link
+                        href="https://github.com/tm2josep"
+                        path={path}
+                        display="inline-flex"
+                        alignItems="center"
+                    >
+                        <IoLogoGithub />
+                    </Link>
                 </Stack>
+
                 <Box flex={1} align="right">
                     <ThemeToggleButton />
+                </Box>
+
+                <Box flex={0} align="right">
+                    <Box ml={2} display={{ base: "inline-block", md: "none" }}>
+                        <Menu>
+                            <MenuButton
+                                as={IconButton}
+                                icon={<HamburgerIcon />}
+                                variant="outline"
+                                aria-label="menu"
+                            ></MenuButton>
+                            <MenuList>
+                                <NextLink href="/" passHref>
+                                    <MenuItem as={Link}>About</MenuItem>
+                                </NextLink>
+                                <NextLink href="/experience" passHref>
+                                    <MenuItem as={Link}>Experience</MenuItem>
+                                </NextLink>
+                                <NextLink href="/projects" passHref>
+                                    <MenuItem as={Link}>Projects</MenuItem>
+                                </NextLink>
+                                <MenuItem
+                                    as={Link}
+                                    href="https://github.com/tm2josep"
+                                >
+                                    Github
+                                </MenuItem>
+                            </MenuList>
+                        </Menu>
+                    </Box>
                 </Box>
             </Container>
         </Box>

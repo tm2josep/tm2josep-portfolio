@@ -1,27 +1,29 @@
 import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
-import styles from "./styles"
 
 const config = {
     initialColorMode: "dark",
     useSystemColorMode: false,
+    fonts: {
+        heading: "Times New Roman, serif",
+        body: "Arial, sans-serif"
+    },
     semanticTokens: {
         colors: {
             active: {
-                default: 'white',
+                default: "white"
             },
             active_bg: {
-                default: 'cyan.400',
-            },
+                default: "cyan.400"
+            }
         }
     }
 }
 
 const theme = extendTheme(
     {
-        ...config,
-        styles
+        ...config
     },
-    withDefaultColorScheme({ colorScheme: 'blue' })
+    withDefaultColorScheme({ colorScheme: "blue" })
 )
 
 export default theme
