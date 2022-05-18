@@ -3,9 +3,11 @@ import {
     Container,
     Heading,
     Image,
+    Text,
     useColorMode,
     chakra
 } from "@chakra-ui/react"
+import Section from "../components/section"
 
 const ProfileImage = chakra(Image, {
     shouldForwardProp: prop => ["width", "height", "src", "alt"].includes(prop)
@@ -16,50 +18,58 @@ const Page = () => {
 
     return (
         <Container>
-            <Box
-                borderRadius="lg"
-                bg={"blue.500"}
-                color={"white"}
-                p={3}
-                mb={6}
-                align="center"
-            >
-                Hi! I'm an Analyst based in Bermuda.
-            </Box>
-
-            <Box display={{ md: "flex" }}>
-                <Box flexGrow={1}>
-                    <Heading as="h2" variant="page-title">
-                        Mammen Joseph
-                    </Heading>
-                    <p>Analyst - Corporate Risk @ Renaissance Re</p>
-                </Box>
-                <Box
-                    flexShrink={0}
-                    mt={{ base: 4, md: 0 }}
-                    ml={{ md: 6 }}
-                    textAlign="center"
-                >
+            <Section delay={0.3}>
+                <Box display={{ md: "flex" }}>
+                    <Box flexGrow={1}>
+                        <Heading as="h2" variant="page-title">
+                            Mammen Joseph
+                        </Heading>
+                        <p>Analyst - Corporate Risk @ Renaissance Re</p>
+                    </Box>
                     <Box
-                        borderColor={colorMode === "light" ? "black" : "white"}
-                        borderWidth={2}
-                        borderStyle="solid"
-                        w="100px"
-                        h="100px"
-                        display="inline-block"
-                        borderRadius="full"
-                        overflow="hidden"
+                        flexShrink={0}
+                        mt={{ base: 4, md: 0 }}
+                        ml={{ md: 6 }}
+                        textAlign="center"
                     >
-                        <ProfileImage
-                            src="/images/headshot.jpg"
-                            alt="Profile image"
+                        <Box
+                            borderColor={
+                                colorMode === "light" ? "black" : "white"
+                            }
+                            borderWidth={2}
+                            borderStyle="solid"
+                            w="100px"
+                            h="100px"
+                            display="inline-block"
                             borderRadius="full"
-                            width="100%"
-                            height="100%"
-                        />
+                            overflow="hidden"
+                        >
+                            <ProfileImage
+                                src="/images/headshot.jpg"
+                                alt="Profile image"
+                                borderRadius="full"
+                                width="100%"
+                                height="100%"
+                            />
+                        </Box>
                     </Box>
                 </Box>
-            </Box>
+            </Section>
+
+            <Section delay={0.6}>
+                <Heading as="h4" variant="section-title">
+                    Summary
+                </Heading>
+                <Text textAlign="justify">
+                    New graduate from the honours co-op mechanical engineering
+                    program of the University of Waterloo. Have extensive
+                    experience from multiple internships in software development
+                    for actuarial automation, tooling for reinsurance
+                    underwriting, data visualization, and data labelling.
+                    Current rights to live and work include Canada, the United
+                    Kingdom, and Bermuda.
+                </Text>
+            </Section>
         </Container>
     )
 }

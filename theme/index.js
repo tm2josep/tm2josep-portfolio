@@ -1,12 +1,34 @@
 import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
 
+const styles = {}
+
+const components = {
+    Heading: {
+        variants: {
+            "section-title": {
+                textDecoration: "underline",
+                fontSize: 26,
+                textUnderlineOffset: 6,
+                textDecorationColor: "#525252",
+                textDecorationThickness: 4,
+                marginTop: 3,
+                marginBottom: 4
+            }
+        }
+    },
+    Link: {}
+}
+
+const fonts = {
+    heading: "Times New Roman, serif",
+    body: "Arial, sans-serif"
+}
+
+const colors = {}
+
 const config = {
     initialColorMode: "dark",
     useSystemColorMode: false,
-    fonts: {
-        heading: "Times New Roman, serif",
-        body: "Arial, sans-serif"
-    },
     semanticTokens: {
         colors: {
             active: {
@@ -20,9 +42,7 @@ const config = {
 }
 
 const theme = extendTheme(
-    {
-        ...config
-    },
+    { config, styles, components, fonts, colors },
     withDefaultColorScheme({ colorScheme: "blue" })
 )
 

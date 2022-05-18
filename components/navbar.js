@@ -10,11 +10,11 @@ import {
     MenuItem,
     MenuList,
     MenuButton,
-    IconButton,
+    IconButton
 } from "@chakra-ui/react"
 import ThemeToggleButton from "./theme-toggle-button"
 import { HamburgerIcon } from "@chakra-ui/icons"
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoLogoMedium } from "react-icons/io5"
 
 const LinkItem = ({ href, path, children }) => {
     const active = path === href
@@ -55,7 +55,7 @@ const Navbar = props => {
                 <Flex align="center" mr={5}>
                     <Link href="/">
                         <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-                            T. Mammen Joseph
+                            Mammen Joseph
                         </Heading>
                     </Link>
                 </Flex>
@@ -81,6 +81,22 @@ const Navbar = props => {
                         alignItems="center"
                     >
                         <IoLogoGithub />
+                    </Link>
+                    <Link
+                        href="https://www.linkedin.com/in/mammen-joseph/"
+                        path={path}
+                        display="inline-flex"
+                        alignItems="center"
+                    >
+                        <IoLogoLinkedin />
+                    </Link>
+                    <Link
+                        href="https://medium.com/@tmammenjoseph"
+                        path={path}
+                        display="inline-flex"
+                        alignItems="center"
+                    >
+                        <IoLogoMedium />
                     </Link>
                 </Stack>
 
@@ -112,6 +128,18 @@ const Navbar = props => {
                                     href="https://github.com/tm2josep"
                                 >
                                     Github
+                                </MenuItem>
+                                <MenuItem
+                                    as={Link}
+                                    href="https://www.linkedin.com/in/mammen-joseph/"
+                                >
+                                    LinkedIn
+                                </MenuItem>
+                                <MenuItem
+                                    as={Link}
+                                    href="https://medium.com/@tmammenjoseph"
+                                >
+                                    Medium
                                 </MenuItem>
                             </MenuList>
                         </Menu>
