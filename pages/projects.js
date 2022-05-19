@@ -43,9 +43,9 @@ const Page = () => {
                     in various forms of technical jargon, with many terms that
                     mean the same thing. This problem exists in other industries
                     as well, but is particularly pronounced in the (re)insurance
-                    industry. For example; the term &rdquo;limit&rdquo; is often
-                    synonymous with &rdquo;limit of liability&rdquo;,
-                    &rdquo;line size&rdquo;, &rdquo;exposure&rdquo;, and more.
+                    industry. For example; the term &quot;limit&quot; is often
+                    synonymous with &quot;limit of liability&quot;,
+                    &quot;line size&quot;, &quot;exposure&quot;, and more.
                     More peculiarly, these additional terms can be used to mean
                     something else entirely. This inconsistency leads to the
                     need for qualifying terms in legal contracts to define
