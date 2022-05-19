@@ -11,8 +11,18 @@ const components = {
                 textUnderlineOffset: 6,
                 textDecorationColor: "#525252",
                 textDecorationThickness: 4,
-                marginTop: 3,
-                marginBottom: 4
+                marginTop: 2,
+                marginBottom: 2,
+                lineHeight: 2
+            }
+        }
+    },
+    Badge: {
+        variants: {
+            'info': {
+                marginTop: 2,
+                marginBottom: 2,
+                marginLeft: 1
             }
         }
     },
