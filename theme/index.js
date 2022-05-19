@@ -14,6 +14,15 @@ const components = {
                 marginTop: 2,
                 marginBottom: 2,
                 lineHeight: 2
+            },
+            "section-subtitle": {
+                textDecoration: "underline",
+                fontSize: 20,
+                textUnderlineOffset: 2,
+                textDecorationColor: "#525252",
+                textDecorationThickness: 2,
+                marginTop: 2,
+                marginBottom: 2,
             }
         }
     },
@@ -26,7 +35,20 @@ const components = {
             }
         }
     },
-    Link: {}
+    Link: {
+        variants: {
+            'text-inline': {
+                textDecoration: "underline",
+                textDecorationColor: "#525252",
+                fontWeight: 900,
+            },
+            'badge-inline': {
+                textDecoration: "underline",
+                textDecorationColor: "#525252",
+                fontWeight: 800,
+            }
+        }
+    }
 }
 
 const fonts = {
