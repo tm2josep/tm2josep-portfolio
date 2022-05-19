@@ -37,7 +37,7 @@ const Page = () => {
                     </ListItem>
                     <ListItem>
                         Cleaned and organized portfolio data to run through
-                        Envelop's AI based model.
+                        Envelop&apos;s AI based model.
                     </ListItem>
                 </UnorderedList>
             </Section>
@@ -121,7 +121,7 @@ const Page = () => {
                 </Flex>
                 <UnorderedList mt={2}>
                     <ListItem>
-                        First Rotation: Notes n' Electrons - Helped develop a
+                        First Rotation: Notes n&apos; Electrons - Helped develop a
                         metronome that listens to the user and provides
                         feedback.
                     </ListItem>

@@ -57,15 +57,15 @@ const Page = () => {
                 <Text>
                     The allocation language is my attempt as solving this
                     problem. The crux of the problem described above is the
-                    inconsistency in language. I don't see a problem with this
-                    on it's own, except that there needs to be legalese appended
+                    inconsistency in language. I don&apos;t see a problem with this
+                    on it&apos;s own, except that there needs to be legalese appended
                     to contracts to ensure deterministic behavior for the
                     contract. To solve this, I built a programming language that
                     operates in much the same way that SQL does - except that
                     instead of being used to query and transform arbitrary sets
                     of data, the allocation language is tailored to take in some
                     set of losses at any level of the tower, and transform them
-                    in such away that liabilities are 'allocated' accordingly.
+                    in such away that liabilities are &apos;allocated&apos; accordingly.
                     With a programming language, this behavior is deterministic.
                     More information can be found on my{" "}
                     <Link
