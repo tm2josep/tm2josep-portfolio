@@ -7,6 +7,7 @@ import {
     useColorMode,
     chakra
 } from "@chakra-ui/react"
+import CellAutomataArt from "../components/langtonAnt.js"
 import Section from "../components/section"
 
 const ProfileImage = chakra(Image, {
@@ -19,7 +20,7 @@ const Page = () => {
     return (
         <Container>
             <Section delay={0.3}>
-                <Box display={{ md: "flex" }}>
+                <Box display={{ md: "flex" }} mt={50}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
                             Mammen Joseph
@@ -55,7 +56,6 @@ const Page = () => {
                     </Box>
                 </Box>
             </Section>
-
             <Section delay={0.6}>
                 <Heading as="h4" variant="section-title">
                     Summary
@@ -69,6 +69,9 @@ const Page = () => {
                     Current rights to live and work include Canada, the United
                     Kingdom, and Bermuda.
                 </Text>
+            </Section>
+            <Section delay={1.0}>
+                <CellAutomataArt />
             </Section>
         </Container>
     )

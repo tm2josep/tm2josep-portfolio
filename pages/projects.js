@@ -125,7 +125,7 @@ const Page = () => {
                     to build an interactive version of his paper, implementing
                     the three base forms of market extrapolation outlined there.
                     The tool allows for live editing of structures and automated
-                    pricing.
+                    pricing extrapolation.
                 </Text>
             </Section>
         </Container>

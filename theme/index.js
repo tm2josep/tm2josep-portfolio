@@ -1,6 +1,10 @@
 import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
 
-const styles = {}
+const styles = {
+    canvas: {
+        width: "100%"
+    }
+}
 
 const components = {
     Heading: {
