@@ -43,11 +43,12 @@ const Page = () => {
                     in various forms of technical jargon, with many terms that
                     mean the same thing. This problem exists in other industries
                     as well, but is particularly pronounced in the (re)insurance
-                    industry. For example; the term "limit" is often synonymous
-                    with "limit of liability", "line size", "exposure", and
-                    more. More peculiarly, these additional terms can be used to
-                    mean something else entirely. This inconsistency leads to
-                    the need for qualifying terms in legal contracts to define
+                    industry. For example; the term &rdquo;limit&rdquo; is often
+                    synonymous with &rdquo;limit of liability&rdquo;,
+                    &rdquo;line size&rdquo;, &rdquo;exposure&rdquo;, and more.
+                    More peculiarly, these additional terms can be used to mean
+                    something else entirely. This inconsistency leads to the
+                    need for qualifying terms in legal contracts to define
                     exactly what each term means, and this legalese is required
                     for <em>every</em> contract.
                 </Text>
@@ -57,17 +58,18 @@ const Page = () => {
                 <Text>
                     The allocation language is my attempt as solving this
                     problem. The crux of the problem described above is the
-                    inconsistency in language. I don&apos;t see a problem with this
-                    on it&apos;s own, except that there needs to be legalese appended
-                    to contracts to ensure deterministic behavior for the
-                    contract. To solve this, I built a programming language that
-                    operates in much the same way that SQL does - except that
-                    instead of being used to query and transform arbitrary sets
-                    of data, the allocation language is tailored to take in some
-                    set of losses at any level of the tower, and transform them
-                    in such away that liabilities are &apos;allocated&apos; accordingly.
-                    With a programming language, this behavior is deterministic.
-                    More information can be found on my{" "}
+                    inconsistency in language. I don&apos;t see a problem with
+                    this on it&apos;s own, except that there needs to be
+                    legalese appended to contracts to ensure deterministic
+                    behavior for the contract. To solve this, I built a
+                    programming language that operates in much the same way that
+                    SQL does - except that instead of being used to query and
+                    transform arbitrary sets of data, the allocation language is
+                    tailored to take in some set of losses at any level of the
+                    tower, and transform them in such away that liabilities are
+                    &apos;allocated&apos; accordingly. With a programming
+                    language, this behavior is deterministic. More information
+                    can be found on my{" "}
                     <Link
                         href="https://tmammenjoseph.medium.com/why-and-how-i-tried-to-make-a-programming-language-8d102c5bc2e0"
                         display="inline-flex"
