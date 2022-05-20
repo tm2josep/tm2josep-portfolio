@@ -44,18 +44,18 @@ const Page = () => {
                     mean the same thing. This problem exists in other industries
                     as well, but is particularly pronounced in the (re)insurance
                     industry. For example; the term &quot;limit&quot; is often
-                    synonymous with &quot;limit of liability&quot;,
-                    &quot;line size&quot;, &quot;exposure&quot;, and more.
-                    More peculiarly, these additional terms can be used to mean
-                    something else entirely. This inconsistency leads to the
-                    need for qualifying terms in legal contracts to define
-                    exactly what each term means, and this legalese is required
-                    for <em>every</em> contract.
+                    synonymous with &quot;limit of liability&quot;, &quot;line
+                    size&quot;, &quot;exposure&quot;, and more. More peculiarly,
+                    these additional terms can be used to mean something else
+                    entirely. This inconsistency leads to the need for
+                    qualifying terms in legal contracts to define exactly what
+                    each term means, and this legalese is required for{" "}
+                    <em>every</em> contract.
                 </Text>
                 <Heading as="h4" variant="section-subtitle">
                     Solution
                 </Heading>
-                <Text>
+                <Text textAlign="justify">
                     The allocation language is my attempt as solving this
                     problem. The crux of the problem described above is the
                     inconsistency in language. I don&apos;t see a problem with
@@ -103,17 +103,17 @@ const Page = () => {
                     Problem
                 </Heading>
                 <Text textAlign="justify">
-                    The current solution was a dated excel file that could only
-                    perform one kind of market curve extrapolation. This
-                    solution also restricted the user to a set number of layers
-                    and could not expand further. Everything was predefined as
-                    percentages, and did not account much for scaling of the
-                    primary portfolio.
+                    A dated excel file that could only perform one kind of
+                    market curve extrapolation was in use. This spreadsheet also
+                    restricted the user to a set number of layers and could not
+                    expand further. Everything was predefined as percentages,
+                    and did not account much for scaling of the primary
+                    portfolio.
                 </Text>
                 <Heading as="h4" variant="section-subtitle">
                     Solution
                 </Heading>
-                <Text>
+                <Text textAlign="justify">
                     Based on a{" "}
                     <Link
                         href="https://www.casact.org/sites/default/files/2021-02/2013_morel.pdf"
