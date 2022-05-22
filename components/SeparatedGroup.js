@@ -3,7 +3,7 @@ const SeparatedGroup = ({ separator, children }) => {
     for (let i = 0; i < children.length; i++) {
         newChildren.push(children[i])
         if (i != children.length - 1) {
-            newChildren.push("|")
+            newChildren.push(separator)
         }
     }
     children = newChildren

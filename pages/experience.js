@@ -3,8 +3,7 @@ import {
     Heading,
     Flex,
     UnorderedList,
-    ListItem,
-    Badge
+    ListItem
 } from "@chakra-ui/react"
 import DetailInfo from "../components/DetailInfo"
 import Section from "../components/section"

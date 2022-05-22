@@ -1,4 +1,4 @@
-import { Container, Heading, Text, Link, Badge, Flex } from "@chakra-ui/react"
+import { Container, Heading, Text, Link, Flex } from "@chakra-ui/react"
 import Section from "../components/section.js"
 import SeparatedGroup from "../components/SeparatedGroup.js"
 import DetailInfo from "../components/DetailInfo.js"
