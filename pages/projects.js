@@ -140,7 +140,7 @@ const Page = () => {
                     Current symbolic editing systems allow for creation of
                     equations by clicking series of buttons and filling in
                     values in a form-like approach. This works for tasks that
-                    don't require speed, but in the context of a tutoring
+                    don&apos;t require speed, but in the context of a tutoring
                     platform that required speed, this was in-feasible.
                 </Text>
                 <Heading as="h4" variant="section-subtitle">
