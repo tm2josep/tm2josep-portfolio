@@ -6,7 +6,9 @@ import {
     ListItem,
     Badge
 } from "@chakra-ui/react"
+import DetailInfo from "../components/DetailInfo"
 import Section from "../components/section"
+import SeparatedGroup from "../components/SeparatedGroup"
 
 const Page = () => {
     return (
@@ -15,12 +17,14 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Envelop Risk
                 </Heading>
-                <Flex gap="2" wrap="wrap" direction="row">
-                    <Badge variant="subtle" colorScheme="blue">Underwriting Assistant</Badge>
-                    <Badge variant="subtle" colorScheme="blue">Hamilton, Bermuda</Badge>
-                    <Badge variant="subtle" colorScheme="blue">May - Aug 2021</Badge>
-                    <Badge variant="subtle" colorScheme="blue">May - Dec 2020</Badge>
-                    <Badge variant="subtle" colorScheme="blue">Nov - Dec 2019</Badge>
+                <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
+                    <SeparatedGroup separator="|">
+                        <DetailInfo>Underwriting Assistant</DetailInfo>
+                        <DetailInfo>Hamilton, Bermuda</DetailInfo>
+                        <DetailInfo>May - Aug 2021</DetailInfo>
+                        <DetailInfo>May - Dec 2020</DetailInfo>
+                        <DetailInfo>Nov - Dec 2019</DetailInfo>
+                    </SeparatedGroup>
                 </Flex>
                 <UnorderedList mt={2}>
                     <ListItem>
@@ -45,10 +49,12 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Aareas Interactive
                 </Heading>
-                <Flex gap="2" wrap="wrap" direction="row">
-                    <Badge variant="subtle" colorScheme="blue">Junior Software Engineer</Badge>
-                    <Badge variant="subtle" colorScheme="blue">North York, ON, Canada</Badge>
-                    <Badge variant="subtle" colorScheme="blue">Jan - April 2019</Badge>
+                <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
+                    <SeparatedGroup separator="|">
+                        <DetailInfo>Junior Software Engineer</DetailInfo>
+                        <DetailInfo>North York, ON, Canada</DetailInfo>
+                        <DetailInfo>Jan - April 2019</DetailInfo>
+                    </SeparatedGroup>
                 </Flex>
                 <UnorderedList mt={2}>
                     <ListItem>
@@ -65,10 +71,12 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Paper Edu (Gradeslam)
                 </Heading>
-                <Flex gap="2" wrap="wrap" direction="row">
-                    <Badge variant="subtle" colorScheme="blue">Software Developer</Badge>
-                    <Badge variant="subtle" colorScheme="blue">Montreal, QC, Canada</Badge>
-                    <Badge variant="subtle" colorScheme="blue">May - Aug 2018</Badge>
+                <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
+                    <SeparatedGroup separator="|">
+                        <DetailInfo>Software Developer</DetailInfo>
+                        <DetailInfo>Montreal, QC, Canada</DetailInfo>
+                        <DetailInfo>May - Aug 2018</DetailInfo>
+                    </SeparatedGroup>
                 </Flex>
                 <UnorderedList mt={2}>
                     <ListItem>
@@ -89,10 +97,12 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Bank of Montreal
                 </Heading>
-                <Flex gap="2" wrap="wrap" direction="row">
-                    <Badge variant="subtle" colorScheme="blue">Software Developer</Badge>
-                    <Badge variant="subtle" colorScheme="blue">Toronto, ON, Canada</Badge>
-                    <Badge variant="subtle" colorScheme="blue">Sep - Dec 2017</Badge>
+                <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
+                    <SeparatedGroup separator="|">
+                        <DetailInfo>Software Developer</DetailInfo>
+                        <DetailInfo>Toronto, ON, Canada</DetailInfo>
+                        <DetailInfo>Sep - Dec 2017</DetailInfo>
+                    </SeparatedGroup>
                 </Flex>
                 <UnorderedList mt={2}>
                     <ListItem>
@@ -114,15 +124,17 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Conrad Business, Entrepreneurship and Technology Centre
                 </Heading>
-                <Flex gap="2" wrap="wrap" direction="row">
-                    <Badge variant="subtle" colorScheme="blue">BETS Intern</Badge>
-                    <Badge variant="subtle" colorScheme="blue">Waterloo, ON, Canada</Badge>
-                    <Badge variant="subtle" colorScheme="blue">Jan - Apr 2017</Badge>
+                <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
+                    <SeparatedGroup separator="|">
+                        <DetailInfo>BETS Intern</DetailInfo>
+                        <DetailInfo>Waterloo, ON, Canada</DetailInfo>
+                        <DetailInfo>Jan - Apr 2017</DetailInfo>
+                    </SeparatedGroup>
                 </Flex>
                 <UnorderedList mt={2}>
                     <ListItem>
-                        First Rotation: Notes n&apos; Electrons - Helped develop a
-                        metronome that listens to the user and provides
+                        First Rotation: Notes n&apos; Electrons - Helped develop
+                        a metronome that listens to the user and provides
                         feedback.
                     </ListItem>
                     <ListItem>
