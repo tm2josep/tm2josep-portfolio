@@ -2,7 +2,7 @@ import { Badge, Link } from "@chakra-ui/react"
 
 const DetailInfo = ({ url = undefined, children, ...props }) => {
     if (props.variant === undefined) {
-        props.variant = "info"
+        props.variant = "plain"
     }
     if (url === undefined) {
         return <Badge {...props}>{children}</Badge>

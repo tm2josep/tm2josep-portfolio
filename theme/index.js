@@ -9,6 +9,16 @@ const styles = {
 const components = {
     Heading: {
         variants: {
+            "title-no-offset": {
+                textDecoration: "underline",
+                fontSize: 26,
+                textUnderlineOffset: 6,
+                textDecorationColor: "#525252",
+                textDecorationThickness: 4,
+                marginTop: 2,
+                marginBottom: 2,
+                lineHeight: 2
+            },
             "section-title": {
                 textDecoration: "underline",
                 fontSize: 26,
@@ -38,11 +48,18 @@ const components = {
                 marginBottom: 2,
                 marginLeft: 1
             },
-            company: {
-                color: "cyan.400",
+            important: {
+                color: "cyan.800",
                 marginTop: 2,
                 marginBottom: 2,
-                marginLeft: 1
+                marginLeft: 1,
+                _dark: {
+                    color: "cyan.400"
+                }
+            },
+            plain: {
+                margin: 0,
+                padding: 0
             }
         }
     },
@@ -78,9 +95,6 @@ const config = {
                 default: "white"
             },
             active_bg: {
-                default: "cyan.400"
-            },
-            important: {
                 default: "cyan.400"
             }
         }

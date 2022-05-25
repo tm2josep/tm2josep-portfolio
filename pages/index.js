@@ -57,7 +57,7 @@ const Page = () => {
                 </Box>
             </Section>
             <Section delay={0.6}>
-                <Heading as="h4" variant="section-title">
+                <Heading as="h4" variant="title-no-offset">
                     Summary
                 </Heading>
                 <Text textAlign="justify">

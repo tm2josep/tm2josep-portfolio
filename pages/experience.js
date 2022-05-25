@@ -18,7 +18,9 @@ const Page = () => {
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
-                        <DetailInfo>Underwriting Assistant</DetailInfo>
+                        <DetailInfo variant="important">
+                            Underwriting Assistant
+                        </DetailInfo>
                         <DetailInfo>Hamilton, Bermuda</DetailInfo>
                         <DetailInfo>May - Aug 2021</DetailInfo>
                         <DetailInfo>May - Dec 2020</DetailInfo>
@@ -50,7 +52,9 @@ const Page = () => {
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
-                        <DetailInfo>Junior Software Engineer</DetailInfo>
+                        <DetailInfo variant="important">
+                            Junior Software Engineer
+                        </DetailInfo>
                         <DetailInfo>North York, ON, Canada</DetailInfo>
                         <DetailInfo>Jan - April 2019</DetailInfo>
                     </SeparatedGroup>
@@ -72,7 +76,9 @@ const Page = () => {
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
-                        <DetailInfo>Software Developer</DetailInfo>
+                        <DetailInfo variant="important">
+                            Software Developer
+                        </DetailInfo>
                         <DetailInfo>Montreal, QC, Canada</DetailInfo>
                         <DetailInfo>May - Aug 2018</DetailInfo>
                     </SeparatedGroup>
@@ -98,7 +104,9 @@ const Page = () => {
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
-                        <DetailInfo>Software Developer</DetailInfo>
+                        <DetailInfo variant="important">
+                            Software Developer
+                        </DetailInfo>
                         <DetailInfo>Toronto, ON, Canada</DetailInfo>
                         <DetailInfo>Sep - Dec 2017</DetailInfo>
                     </SeparatedGroup>
@@ -125,7 +133,7 @@ const Page = () => {
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
-                        <DetailInfo>BETS Intern</DetailInfo>
+                        <DetailInfo variant="important">BETS Intern</DetailInfo>
                         <DetailInfo>Waterloo, ON, Canada</DetailInfo>
                         <DetailInfo>Jan - Apr 2017</DetailInfo>
                     </SeparatedGroup>

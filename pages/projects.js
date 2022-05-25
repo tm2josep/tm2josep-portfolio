@@ -11,7 +11,7 @@ const Page = () => {
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
-                        <DetailInfo variant="company">
+                        <DetailInfo variant="important">
                             Personal Project
                         </DetailInfo>
                         <DetailInfo url="https://www.python.org">
@@ -77,7 +77,7 @@ const Page = () => {
                     <SeparatedGroup separator="|">
                         <DetailInfo
                             url="https://www.enveloprisk.com"
-                            variant="company"
+                            variant="important"
                         >
                             Envelop Risk
                         </DetailInfo>
@@ -129,7 +129,7 @@ const Page = () => {
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
-                        <DetailInfo url="https://paper.co" variant="company">
+                        <DetailInfo url="https://paper.co" variant="important">
                             Paper Edu
                         </DetailInfo>
                         <DetailInfo url="http://asciimath.org">
@@ -172,7 +172,7 @@ const Page = () => {
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
-                        <DetailInfo url="https://www.bmo.com" variant="company">
+                        <DetailInfo url="https://www.bmo.com" variant="important">
                             BMO
                         </DetailInfo>
                         <DetailInfo url="https://www.angular.com">
