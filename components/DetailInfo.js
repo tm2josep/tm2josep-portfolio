@@ -1,17 +1,15 @@
-import {Badge, Link} from "@chakra-ui/react"
+import { Badge, Link } from "@chakra-ui/react"
 
-const DetailInfo = ({ url = undefined, children }) => {
+const DetailInfo = ({ url = undefined, children, ...props }) => {
+    if (props.variant === undefined) {
+        props.variant = "info"
+    }
     if (url === undefined) {
-        return <Badge variant="plain">{children}</Badge>
+        return <Badge {...props}>{children}</Badge>
     }
     return (
-        <Badge variant="plain">
-            <Link
-                href={url}
-                display="inline-flex"
-                alignItems="center"
-                variant="badge-inline"
-            >
+        <Badge {...props}>
+            <Link href={url} display="inline-flex" alignItems="center">
                 {children}
             </Link>
         </Badge>

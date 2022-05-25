@@ -11,7 +11,9 @@ const Page = () => {
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
-                        <DetailInfo>Personal Project</DetailInfo>
+                        <DetailInfo variant="company">
+                            Personal Project
+                        </DetailInfo>
                         <DetailInfo url="https://www.python.org">
                             Python 3.10
                         </DetailInfo>
@@ -73,7 +75,10 @@ const Page = () => {
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
-                        <DetailInfo url="https://www.enveloprisk.com">
+                        <DetailInfo
+                            url="https://www.enveloprisk.com"
+                            variant="company"
+                        >
                             Envelop Risk
                         </DetailInfo>
                         <DetailInfo url="https://www.python.org">
@@ -124,7 +129,7 @@ const Page = () => {
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
-                        <DetailInfo url="https://paper.co">
+                        <DetailInfo url="https://paper.co" variant="company">
                             Paper Edu
                         </DetailInfo>
                         <DetailInfo url="http://asciimath.org">
@@ -159,6 +164,49 @@ const Page = () => {
                     than AsciiMath. KaTeX was chosen as the renderer for the
                     project because it was fast enough to keep up with the
                     demands of a platform like this one.
+                </Text>
+            </Section>
+            <Section delay={0.4}>
+                <Heading as="h3" variant="section-title">
+                    Symbolic Input System
+                </Heading>
+                <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
+                    <SeparatedGroup separator="|">
+                        <DetailInfo url="https://www.bmo.com" variant="company">
+                            BMO
+                        </DetailInfo>
+                        <DetailInfo url="https://www.angular.com">
+                            Angular 2+
+                        </DetailInfo>
+                        <DetailInfo url="https://www.npm.com">
+                            PDF Gen
+                        </DetailInfo>
+                    </SeparatedGroup>
+                </Flex>
+                <Heading as="h4" variant="section-subtitle">
+                    Problem
+                </Heading>
+                <Text textAlign="justify">
+                    The website builder project being built at BMO used JSON
+                    files to build a series of web-forms that took in user
+                    information. The forms often required sensitive information
+                    like credit card info, social insurance numbers, and more.
+                    The issue was that documents had to be generated from this
+                    information in a secure way, and the repeated transfer of
+                    information over the network increased this risk.
+                </Text>
+                <Heading as="h4" variant="section-subtitle">
+                    Solution
+                </Heading>
+                <Text textAlign="justify">
+                    It was the opinion of my manager at BMO that client side
+                    generation of documentation could reduce the security risk
+                    posed. I built a series of adaptor classes and document
+                    generators that could take in the information from both the
+                    JSON configuration, and the user input data, to generate the
+                    required documents in the browser itself. Leveraging the
+                    Angular framework and a few document generation libraries,
+                    the solution could generate both excel and pdf files.
                 </Text>
             </Section>
         </Container>

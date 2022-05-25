@@ -17,6 +17,7 @@ const components = {
                 textDecorationThickness: 4,
                 marginTop: 2,
                 marginBottom: 2,
+                marginLeft: -5,
                 lineHeight: 2
             },
             "section-subtitle": {
@@ -26,13 +27,19 @@ const components = {
                 textDecorationColor: "#525252",
                 textDecorationThickness: 2,
                 marginTop: 2,
-                marginBottom: 2,
+                marginBottom: 2
             }
         }
     },
     Badge: {
         variants: {
-            'info': {
+            info: {
+                marginTop: 2,
+                marginBottom: 2,
+                marginLeft: 1
+            },
+            company: {
+                color: "cyan.400",
                 marginTop: 2,
                 marginBottom: 2,
                 marginLeft: 1
@@ -41,15 +48,15 @@ const components = {
     },
     Link: {
         variants: {
-            'text-inline': {
+            "text-inline": {
                 textDecoration: "underline",
                 textDecorationColor: "#525252",
-                fontWeight: 900,
+                fontWeight: 900
             },
-            'badge-inline': {
+            "badge-inline": {
                 textDecoration: "underline",
                 textDecorationColor: "#525252",
-                fontWeight: 800,
+                fontWeight: 800
             }
         }
     }
@@ -71,6 +78,9 @@ const config = {
                 default: "white"
             },
             active_bg: {
+                default: "cyan.400"
+            },
+            important: {
                 default: "cyan.400"
             }
         }

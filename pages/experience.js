@@ -26,19 +26,19 @@ const Page = () => {
                     </SeparatedGroup>
                 </Flex>
                 <UnorderedList mt={2}>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Built a market curve pricing extrapolation tool using a
                         spline curve approach.
                     </ListItem>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Built a portfolio peer finder and mock generator for
                         model verification.
                     </ListItem>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Labelled and analyzed claims data to understand newer
                         loss trends.
                     </ListItem>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Cleaned and organized portfolio data to run through
                         Envelop&apos;s AI based model.
                     </ListItem>
@@ -56,11 +56,11 @@ const Page = () => {
                     </SeparatedGroup>
                 </Flex>
                 <UnorderedList mt={2}>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Developed a tool to plan home exterior and interior
                         designs in 3D, via a modern web browser.
                     </ListItem>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Wrote scripts to track, catalogue, and verify 3D assets
                         to ensure viability for the home design tool.
                     </ListItem>
@@ -78,15 +78,15 @@ const Page = () => {
                     </SeparatedGroup>
                 </Flex>
                 <UnorderedList mt={2}>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Designed and developed an intuitive input system for
                         mathematical equations and chemical reactions
                     </ListItem>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Created middleware for a messaging system to increase
                         logging, error-handling and - in-turn - bug prevention.
                     </ListItem>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Large team web development of a 24/7 online tutoring
                         platform.
                     </ListItem>
@@ -104,15 +104,15 @@ const Page = () => {
                     </SeparatedGroup>
                 </Flex>
                 <UnorderedList mt={2}>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Built and designed a JSON based website builder to match
                         BMO branding and style guidelines.
                     </ListItem>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Created a document generator based on the website
                         builder to create on-demand documentation.
                     </ListItem>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Adapted the document generator to work client-side,
                         limiting the transfer of sensitive data - increasing
                         security.
@@ -131,17 +131,17 @@ const Page = () => {
                     </SeparatedGroup>
                 </Flex>
                 <UnorderedList mt={2}>
-                    <ListItem>
+                    <ListItem mb={2}>
                         First Rotation: Notes n&apos; Electrons - Helped develop
                         a metronome that listens to the user and provides
                         feedback.
                     </ListItem>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Second Rotation: AVRO Life Science - Assisted the
                         research and development of a pediatric trans-dermal
                         antihistamine drug delivery skin patch.
                     </ListItem>
-                    <ListItem>
+                    <ListItem mb={2}>
                         Third Rotation: Borealis wind - Helped prototype and
                         wrote a field test report for a wind turbine blade
                         deicing retrofit
