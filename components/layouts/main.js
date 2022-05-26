@@ -4,7 +4,7 @@ import Navbar from "../navbar"
 
 const Main = ({ children, router }) => {
     return (
-        <Box as="main" pb={8}>
+        <Box as="main" pb={8} overflowX="hidden">
             <Head>
                 <meta
                     name="viewport"

@@ -1,6 +1,9 @@
 import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
 
 const styles = {
+    div: {
+        overflowX: "hidden"
+    },
     canvas: {
         width: "100%"
     }

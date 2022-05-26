@@ -5,9 +5,11 @@ import {
     Image,
     Text,
     useColorMode,
-    chakra
+    chakra,
+    HStack
 } from "@chakra-ui/react"
 import CellAutomataArt from "../components/langtonAnt.js"
+import Marquee from "../components/Marquee.js"
 import Section from "../components/section"
 
 const ProfileImage = chakra(Image, {
@@ -57,6 +59,36 @@ const Page = () => {
                 </Box>
             </Section>
             <Section delay={0.6}>
+                <Marquee>
+                    <HStack>
+                        <Image
+                            src="/images/CompanyLogos/EnvelopLogo.png"
+                            height="100px"
+                        ></Image>
+                        <Image
+                            src="/images/CompanyLogos/AareasInteractiveLogo.png"
+                            height="100px"
+                        ></Image>
+                        <Image
+                            src="/images/CompanyLogos/PaperCoLogo.png"
+                            height="100px"
+                        ></Image>
+                        <Image
+                            src="/images/CompanyLogos/BMOLogo.png"
+                            height="100px"
+                        ></Image>
+                        <Image
+                            src="/images/CompanyLogos/ConradCentreLogo.png"
+                            height="100px"
+                        ></Image>
+                        <Image
+                            src="/images/CompanyLogos/RenaissanceReLogo.png"
+                            height="100px"
+                        ></Image>
+                    </HStack>
+                </Marquee>
+            </Section>
+            <Section delay={0.9}>
                 <Heading as="h4" variant="title-no-offset">
                     Summary
                 </Heading>
@@ -70,7 +102,7 @@ const Page = () => {
                     Kingdom, and Bermuda.
                 </Text>
             </Section>
-            <Section delay={1.0}>
+            <Section delay={1.2}>
                 <CellAutomataArt />
             </Section>
         </Container>
