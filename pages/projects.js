@@ -168,7 +168,7 @@ const Page = () => {
             </Section>
             <Section delay={0.4}>
                 <Heading as="h3" variant="section-title">
-                    Symbolic Input System
+                    Document Generator
                 </Heading>
                 <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                     <SeparatedGroup separator="|">
