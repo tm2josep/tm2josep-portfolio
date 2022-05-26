@@ -178,7 +178,7 @@ const Page = () => {
                         <DetailInfo url="https://angular.io">
                             Angular 2+
                         </DetailInfo>
-                        <DetailInfo url="https://angular.io">
+                        <DetailInfo url="https://www.npmjs.com/package/pdf-gen">
                             PDF Gen
                         </DetailInfo>
                     </SeparatedGroup>
