@@ -62,6 +62,11 @@ const Page = () => {
                 <Marquee>
                     <HStack>
                         <Image
+                            src="/images/CompanyLogos/RenaissanceReLogo.png"
+                            height="100px"
+                            alt="Company Logo: RenaissanceRe"
+                        ></Image>
+                        <Image
                             src="/images/CompanyLogos/EnvelopLogo.png"
                             height="100px"
                             alt="Company Logo: Envelop"
@@ -85,11 +90,6 @@ const Page = () => {
                             src="/images/CompanyLogos/ConradCentreLogo.png"
                             height="100px"
                             alt="Company Logo: ConradCentre"
-                        ></Image>
-                        <Image
-                            src="/images/CompanyLogos/RenaissanceReLogo.png"
-                            height="100px"
-                            alt="Company Logo: RenaissanceRe"
                         ></Image>
                     </HStack>
                 </Marquee>
