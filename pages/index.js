@@ -64,26 +64,32 @@ const Page = () => {
                         <Image
                             src="/images/CompanyLogos/EnvelopLogo.png"
                             height="100px"
+                            alt="Company Logo: Envelop"
                         ></Image>
                         <Image
                             src="/images/CompanyLogos/AareasInteractiveLogo.png"
                             height="100px"
+                            alt="Company Logo: AareasInteractive"
                         ></Image>
                         <Image
                             src="/images/CompanyLogos/PaperCoLogo.png"
                             height="100px"
+                            alt="Company Logo: PaperCo"
                         ></Image>
                         <Image
                             src="/images/CompanyLogos/BMOLogo.png"
                             height="100px"
+                            alt="Company Logo: BMO"
                         ></Image>
                         <Image
                             src="/images/CompanyLogos/ConradCentreLogo.png"
                             height="100px"
+                            alt="Company Logo: ConradCentre"
                         ></Image>
                         <Image
                             src="/images/CompanyLogos/RenaissanceReLogo.png"
                             height="100px"
+                            alt="Company Logo: RenaissanceRe"
                         ></Image>
                     </HStack>
                 </Marquee>
