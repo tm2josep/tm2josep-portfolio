@@ -175,10 +175,10 @@ const Page = () => {
                         <DetailInfo url="https://www.bmo.com" variant="important">
                             BMO
                         </DetailInfo>
-                        <DetailInfo url="https://www.angular.com">
+                        <DetailInfo url="https://angular.io">
                             Angular 2+
                         </DetailInfo>
-                        <DetailInfo url="https://www.npm.com">
+                        <DetailInfo url="https://angular.io">
                             PDF Gen
                         </DetailInfo>
                     </SeparatedGroup>
