@@ -6,15 +6,30 @@ import {
     Text,
     useColorMode,
     chakra,
-    HStack
+    Flex,
+    Link
 } from "@chakra-ui/react"
 import CellAutomataArt from "../components/langtonAnt.js"
-import Marquee from "../components/Marquee.js"
 import Section from "../components/section"
 
 const ProfileImage = chakra(Image, {
     shouldForwardProp: prop => ["width", "height", "src", "alt"].includes(prop)
 })
+
+const CompanyLogo = ({ href, src, alt }) => {
+    return (
+        <Link href={href}>
+            <Image
+                mb={2}
+                borderRadius="6px"
+                src={src}
+                maxHeight="100"
+                maxWidth="200"
+                alt={alt}
+            ></Image>
+        </Link>
+    )
+}
 
 const Page = () => {
     const { colorMode } = useColorMode()
@@ -58,55 +73,57 @@ const Page = () => {
                     </Box>
                 </Box>
             </Section>
-            <Section delay={0.6}>
-                <Marquee>
-                    <HStack>
-                        <Image
-                            src="/images/CompanyLogos/RenaissanceReLogo.png"
-                            height="100px"
-                            alt="Company Logo: RenaissanceRe"
-                        ></Image>
-                        <Image
-                            src="/images/CompanyLogos/EnvelopLogo.png"
-                            height="100px"
-                            alt="Company Logo: Envelop"
-                        ></Image>
-                        <Image
-                            src="/images/CompanyLogos/AareasInteractiveLogo.png"
-                            height="100px"
-                            alt="Company Logo: AareasInteractive"
-                        ></Image>
-                        <Image
-                            src="/images/CompanyLogos/PaperCoLogo.png"
-                            height="100px"
-                            alt="Company Logo: PaperCo"
-                        ></Image>
-                        <Image
-                            src="/images/CompanyLogos/BMOLogo.png"
-                            height="100px"
-                            alt="Company Logo: BMO"
-                        ></Image>
-                        <Image
-                            src="/images/CompanyLogos/ConradCentreLogo.png"
-                            height="100px"
-                            alt="Company Logo: ConradCentre"
-                        ></Image>
-                    </HStack>
-                </Marquee>
-            </Section>
             <Section delay={0.9}>
                 <Heading as="h4" variant="title-no-offset">
                     Summary
                 </Heading>
                 <Text textAlign="justify">
                     New graduate from the honours co-op mechanical engineering
-                    program of the University of Waterloo. Have extensive
-                    experience from multiple internships in software development
-                    for actuarial automation, tooling for reinsurance
-                    underwriting, data visualization, and data labelling.
-                    Current rights to live and work include Canada, the United
-                    Kingdom, and Bermuda.
+                    program of the University of Waterloo. Have experience from
+                    multiple internships in software development for actuarial
+                    automation, tooling for reinsurance underwriting, data
+                    visualization, and data labelling. Currently have the right
+                    to live and work in Canada, the United Kingdom, and Bermuda.
                 </Text>
+            </Section>
+            <Section delay={0.6}>
+                <Flex
+                    wrap="wrap"
+                    align="center"
+                    justify="space-evenly"
+                    width="full"
+                >
+                    <CompanyLogo
+                        href="https://www.renre.com"
+                        src="/images/CompanyLogos/RenaissanceReLogo.png"
+                        alt="Company Logo: RenaissanceRe"
+                    ></CompanyLogo>
+                    <CompanyLogo
+                        href="https://www.enveloprisk.com"
+                        src="/images/CompanyLogos/EnvelopLogo.png"
+                        alt="Company Logo: Envelop"
+                    ></CompanyLogo>
+                    <CompanyLogo
+                        href="https://paper.co"
+                        src="/images/CompanyLogos/PaperCoLogo.png"
+                        alt="Company Logo: PaperCo"
+                    ></CompanyLogo>
+                    <CompanyLogo
+                        href="https://aareas.com"
+                        src="/images/CompanyLogos/AareasInteractiveLogo.png"
+                        alt="Company Logo: AareasInteractive"
+                    ></CompanyLogo>
+                    <CompanyLogo
+                        href="https://www.bmo.com/main/personal"
+                        src="/images/CompanyLogos/BMOLogo.png"
+                        alt="Company Logo: BMO"
+                    ></CompanyLogo>
+                    <CompanyLogo
+                        href="https://uwaterloo.ca/conrad-school-entrepreneurship-business/"
+                        src="/images/CompanyLogos/ConradCentreLogo.png"
+                        maxWidth="200"
+                    ></CompanyLogo>
+                </Flex>
             </Section>
             <Section delay={1.2}>
                 <CellAutomataArt />

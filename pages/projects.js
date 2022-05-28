@@ -44,7 +44,7 @@ const Page = () => {
                     Solution
                 </Heading>
                 <Text textAlign="justify">
-                    The allocation language is my attempt as solving this
+                    The allocation language is my attempt at solving this
                     problem. The crux of the problem described above is the
                     inconsistency in language. I don&apos;t see a problem with
                     this on it&apos;s own, except that there needs to be
