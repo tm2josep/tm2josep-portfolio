@@ -5,156 +5,32 @@ import {
     UnorderedList,
     ListItem
 } from "@chakra-ui/react"
-import DetailInfo from "../components/DetailInfo"
+import DetailInfo from "../components/detail-info"
 import Section from "../components/section"
-import SeparatedGroup from "../components/SeparatedGroup"
+import SeparatedGroup from "../components/separated-group"
+import AareasInteractive from "../components/text-blocks/experience/aareas-interactive"
+import BankOfMontreal from "../components/text-blocks/experience/bank-of-montreal"
+import ConradCentre from "../components/text-blocks/experience/conrad-bets-centre"
+import EnvelopRisk from "../components/text-blocks/experience/envelop-risk"
+import PaperEdu from "../components/text-blocks/experience/paper-edu"
 
 const Page = () => {
     return (
         <Container>
             <Section delay={0.2}>
-                <Heading as="h3" variant="section-title">
-                    Envelop Risk
-                </Heading>
-                <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
-                    <SeparatedGroup separator="|">
-                        <DetailInfo variant="important">
-                            Underwriting Assistant
-                        </DetailInfo>
-                        <DetailInfo>Hamilton, Bermuda</DetailInfo>
-                        <DetailInfo>May - Aug 2021</DetailInfo>
-                        <DetailInfo>May - Dec 2020</DetailInfo>
-                        <DetailInfo>Nov - Dec 2019</DetailInfo>
-                    </SeparatedGroup>
-                </Flex>
-                <UnorderedList mt={2}>
-                    <ListItem mb={2}>
-                        Built a market curve pricing extrapolation tool using a
-                        spline curve approach.
-                    </ListItem>
-                    <ListItem mb={2}>
-                        Built a portfolio peer finder and mock generator for
-                        model verification.
-                    </ListItem>
-                    <ListItem mb={2}>
-                        Labelled and analyzed claims data to understand newer
-                        loss trends.
-                    </ListItem>
-                    <ListItem mb={2}>
-                        Cleaned and organized portfolio data to run through
-                        Envelop&apos;s AI based model.
-                    </ListItem>
-                </UnorderedList>
+                <EnvelopRisk />
             </Section>
             <Section delay={0.4}>
-                <Heading as="h3" variant="section-title">
-                    Aareas Interactive
-                </Heading>
-                <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
-                    <SeparatedGroup separator="|">
-                        <DetailInfo variant="important">
-                            Junior Software Engineer
-                        </DetailInfo>
-                        <DetailInfo>North York, ON, Canada</DetailInfo>
-                        <DetailInfo>Jan - April 2019</DetailInfo>
-                    </SeparatedGroup>
-                </Flex>
-                <UnorderedList mt={2}>
-                    <ListItem mb={2}>
-                        Developed a tool to plan home exterior and interior
-                        designs in 3D, via a modern web browser.
-                    </ListItem>
-                    <ListItem mb={2}>
-                        Wrote scripts to track, catalogue, and verify 3D assets
-                        to ensure viability for the home design tool.
-                    </ListItem>
-                </UnorderedList>
+                <AareasInteractive />
             </Section>
             <Section delay={0.6}>
-                <Heading as="h3" variant="section-title">
-                    Paper Edu (Gradeslam)
-                </Heading>
-                <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
-                    <SeparatedGroup separator="|">
-                        <DetailInfo variant="important">
-                            Software Developer
-                        </DetailInfo>
-                        <DetailInfo>Montreal, QC, Canada</DetailInfo>
-                        <DetailInfo>May - Aug 2018</DetailInfo>
-                    </SeparatedGroup>
-                </Flex>
-                <UnorderedList mt={2}>
-                    <ListItem mb={2}>
-                        Designed and developed an intuitive input system for
-                        mathematical equations and chemical reactions
-                    </ListItem>
-                    <ListItem mb={2}>
-                        Created middleware for a messaging system to increase
-                        logging, error-handling and - in-turn - bug prevention.
-                    </ListItem>
-                    <ListItem mb={2}>
-                        Large team web development of a 24/7 online tutoring
-                        platform.
-                    </ListItem>
-                </UnorderedList>
+                <PaperEdu />
             </Section>
             <Section delay={0.8}>
-                <Heading as="h3" variant="section-title">
-                    Bank of Montreal
-                </Heading>
-                <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
-                    <SeparatedGroup separator="|">
-                        <DetailInfo variant="important">
-                            Software Developer
-                        </DetailInfo>
-                        <DetailInfo>Toronto, ON, Canada</DetailInfo>
-                        <DetailInfo>Sep - Dec 2017</DetailInfo>
-                    </SeparatedGroup>
-                </Flex>
-                <UnorderedList mt={2}>
-                    <ListItem mb={2}>
-                        Built and designed a JSON based website builder to match
-                        BMO branding and style guidelines.
-                    </ListItem>
-                    <ListItem mb={2}>
-                        Created a document generator based on the website
-                        builder to create on-demand documentation.
-                    </ListItem>
-                    <ListItem mb={2}>
-                        Adapted the document generator to work client-side,
-                        limiting the transfer of sensitive data - increasing
-                        security.
-                    </ListItem>
-                </UnorderedList>
+                <BankOfMontreal />
             </Section>
             <Section delay={1.0}>
-                <Heading as="h3" variant="section-title">
-                    Conrad Business, Entrepreneurship and Technology Centre
-                </Heading>
-                <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
-                    <SeparatedGroup separator="|">
-                        <DetailInfo variant="important">BETS Intern</DetailInfo>
-                        <DetailInfo>Waterloo, ON, Canada</DetailInfo>
-                        <DetailInfo>Jan - Apr 2017</DetailInfo>
-                    </SeparatedGroup>
-                </Flex>
-                <UnorderedList mt={2}>
-                    <ListItem mb={2}>
-                        First Rotation: Notes n&apos; Electrons - Helped develop
-                        a metronome that listens to the user and provides
-                        feedback.
-                    </ListItem>
-                    <ListItem mb={2}>
-                        Second Rotation: AVRO Life Science - Assisted the
-                        research and development of a pediatric trans-dermal
-                        antihistamine drug delivery skin patch.
-                    </ListItem>
-                    <ListItem mb={2}>
-                        Third Rotation: Borealis wind - Helped prototype and
-                        wrote a field test report for a wind turbine blade
-                        deicing retrofit
-                    </ListItem>
-                </UnorderedList>
+                <ConradCentre />
             </Section>
         </Container>
     )

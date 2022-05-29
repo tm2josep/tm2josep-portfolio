@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"
-import LangtonsAnt from "../cellAutomata/LangtonsAnt"
-import BooleanTileGrid from "../cellAutomata/TileGrid"
+import LangtonsAnt from "../../cellAutomata/LangtonsAnt"
+import BooleanTileGrid from "../../cellAutomata/TileGrid"
 import { Container, Link } from "@chakra-ui/react"
 const TILE_SIZE = 10
 
