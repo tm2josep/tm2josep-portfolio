@@ -1,13 +1,7 @@
 import {
     Container,
-    Heading,
-    Flex,
-    UnorderedList,
-    ListItem
 } from "@chakra-ui/react"
-import DetailInfo from "../components/detail-info"
 import Section from "../components/section"
-import SeparatedGroup from "../components/separated-group"
 import AareasInteractive from "../components/text-blocks/experience/aareas-interactive"
 import BankOfMontreal from "../components/text-blocks/experience/bank-of-montreal"
 import ConradCentre from "../components/text-blocks/experience/conrad-bets-centre"

@@ -14,7 +14,7 @@ const ProfileCard = () => {
                 height="min-content"
                 color="white"
             >
-                <Box flexGrow={1}>
+                <Box flexGrow={1} textAlign={{ base: "center", md: "justify" }}>
                     <Heading as="h2" variant="page-title">
                         Mammen Joseph
                     </Heading>
