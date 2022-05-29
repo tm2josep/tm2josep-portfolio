@@ -3,6 +3,7 @@ import Layout from "../components/layouts/main"
 import theme from "../theme/index"
 import { AnimatePresence } from "framer-motion"
 import { useEffect } from "react"
+import "../public/vanta.css"
 
 const Website = ({ Component, pageProps, router }) => {
     useEffect(() => {
