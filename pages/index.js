@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react"
 import CellAutomataArt from "../components/langtonAnt.js"
 import Section from "../components/section"
+import VantaBackdrop from "../components/vantaBackdrop.js"
 
 const ProfileImage = chakra(Image, {
     shouldForwardProp: prop => ["width", "height", "src", "alt"].includes(prop)
@@ -31,50 +32,57 @@ const CompanyLogo = ({ href, src, alt }) => {
     )
 }
 
-const Page = () => {
-    const { colorMode } = useColorMode()
-
+const IntroCard = () => {
     return (
-        <Container>
-            <Section delay={0.3}>
-                <Box display={{ md: "flex" }} mt={50}>
-                    <Box flexGrow={1}>
-                        <Heading as="h2" variant="page-title">
-                            Mammen Joseph
-                        </Heading>
-                        <p>Analyst - Corporate Risk @ Renaissance Re</p>
-                    </Box>
-                    <Box
-                        flexShrink={0}
-                        mt={{ base: 4, md: 0 }}
-                        ml={{ md: 6 }}
-                        textAlign="center"
-                    >
-                        <Box
-                            borderColor={
-                                colorMode === "light" ? "black" : "white"
-                            }
-                            borderWidth={2}
-                            borderStyle="solid"
-                            w="100px"
-                            h="100px"
-                            display="inline-block"
-                            borderRadius="full"
-                            overflow="hidden"
-                        >
-                            <ProfileImage
-                                src="/images/headshot.jpg"
-                                alt="Profile image"
-                                borderRadius="full"
-                                width="100%"
-                                height="100%"
-                            />
-                        </Box>
-                    </Box>
+        <Box display={{ md: "flex" }} p={5} height="min-content" color="white">
+            <Box flexGrow={1}>
+                <Heading as="h2" variant="page-title" >
+                    Mammen Joseph
+                </Heading>
+                <p>Analyst - Corporate Risk @ Renaissance Re</p>
+            </Box>
+            <Box
+                flexShrink={0}
+                mt={{ base: 4, md: 0 }}
+                ml={{ md: 6 }}
+                textAlign="center"
+            >
+                <Box
+                    borderWidth={2}
+                    borderStyle="solid"
+                    w="100px"
+                    h="100px"
+                    display="inline-block"
+                    borderRadius="full"
+                    borderColor="white"
+                    overflow="hidden"
+                >
+                    <ProfileImage
+                        src="/images/headshot.jpg"
+                        alt="Profile image"
+                        borderRadius="full"
+                        width="100%"
+                        height="100%"
+                    />
                 </Box>
+            </Box>
+        </Box>
+    )
+}
+
+const Page = () => {
+    return (
+        <Container mt={3}>
+            <Section delay={0.3}>
+                <VantaBackdrop pt={10}>
+                    <IntroCard />
+                </VantaBackdrop>
             </Section>
             <Section delay={0.9}>
-                <Heading as="h4" variant="title-no-offset">
+                <Heading
+                    as="h4"
+                    variant="title-no-offset"
+                >
                     Summary
                 </Heading>
                 <Text textAlign="justify">
