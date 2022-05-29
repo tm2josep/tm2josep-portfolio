@@ -52,10 +52,12 @@ const components = {
                 marginLeft: 1
             },
             important: {
-                color: "cyan.800",
                 marginTop: 2,
                 marginBottom: 2,
                 marginLeft: 1,
+                _light: {
+                    color: "cyan.800"
+                },
                 _dark: {
                     color: "cyan.400"
                 }
@@ -90,8 +92,7 @@ const fonts = {
 const colors = {}
 
 const config = {
-    initialColorMode: "dark",
-    useSystemColorMode: false,
+    useSystemColorMode: true,
     semanticTokens: {
         colors: {
             active: {
