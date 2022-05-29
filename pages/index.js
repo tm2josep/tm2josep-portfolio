@@ -4,7 +4,6 @@ import {
     Heading,
     Image,
     Text,
-    useColorMode,
     chakra,
     Flex,
     Link
