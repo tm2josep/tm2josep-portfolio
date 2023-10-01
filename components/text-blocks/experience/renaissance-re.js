@@ -25,8 +25,7 @@ const RenaissanceRe = () => {
                     Interface with brokers regarding exposure and modelling data.
                 </ListItem>
                 <ListItem mb={2}>
-                    Run RMS and AIR Vendor Catastrophe models and comparing against RenaissanceRe&apos;s internal
-                    catastrophe model.
+                    Run RMS and AIR vendor catastrophe models for comparison against RenaissanceRe&apos;s internal model.
                 </ListItem>
                 <ListItem mb={2}>
                     Provide the following deliverables to underwriters:
@@ -34,7 +33,7 @@ const RenaissanceRe = () => {
                         <ListItem>Meeting Prep Packets</ListItem>
                         <ListItem>Exposure Summaries and Analytics</ListItem>
                         <ListItem>Loss Trending</ListItem>
-                        <ListItem>EP Curves (Both Vendor and Internal) at various zone / peril grains.</ListItem>
+                        <ListItem>EP Curves (Both Vendor and Internal) at driving zone and peril granularity.</ListItem>
                     </UnorderedList>
                 </ListItem>
                 <Heading as="h6" variant='section-subtitle'>
