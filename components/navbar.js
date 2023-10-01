@@ -113,7 +113,7 @@ const Navbar = props => {
                                 variant="outline"
                                 aria-label="menu"
                             ></MenuButton>
-                            <MenuList>
+                            <MenuList position="relative" zIndex={1000}>
                                 <NextLink href="/" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
                                 </NextLink>

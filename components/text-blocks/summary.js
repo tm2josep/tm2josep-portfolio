@@ -7,12 +7,12 @@ const Summary = () => {
                 Summary
             </Heading>
             <Text textAlign="justify">
-                New graduate from the honours co-op mechanical engineering
-                program of the University of Waterloo. Have experience from
-                multiple internships in software development for actuarial
-                automation, tooling for reinsurance underwriting, data
-                visualization, and data labelling. Currently have the right to
-                live and work in Canada, the United Kingdom, and Bermuda.
+                Property Catastrophe Risk Analyst at Renaissance Re. Have
+                experience in software development for actuarial automation,
+                tooling for reinsurance underwriting, data visualization, data
+                analytics, data labelling, document generation, and UI/UX.
+                Current rights to live and work without additional immigration
+                paperwork include Bermuda, the United Kingdom, and Canada.
             </Text>
         </Box>
     )

@@ -7,7 +7,7 @@ const ProfileImage = chakra(Image, {
 
 const ProfileCard = () => {
     return (
-        <VantaBackdrop pt={10}>
+        <VantaBackdrop pt={10}  zIndex={-1}>
             <Box
                 display={{ md: "flex" }}
                 p={5}

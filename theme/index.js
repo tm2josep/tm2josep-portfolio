@@ -44,6 +44,7 @@ const components = {
             }
         }
     },
+    
     Badge: {
         variants: {
             info: {
@@ -89,7 +90,9 @@ const fonts = {
     body: "Arial, sans-serif"
 }
 
-const colors = {}
+const colors = {
+
+}
 
 const config = {
     useSystemColorMode: true,
