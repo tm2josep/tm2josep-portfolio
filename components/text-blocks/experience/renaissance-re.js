@@ -25,7 +25,7 @@ const RenaissanceRe = () => {
                     Interface with brokers regarding exposure and modelling data.
                 </ListItem>
                 <ListItem mb={2}>
-                    Run RMS and AIR Vendor Catastrophe models and comparing against RenaissanceRe's internal
+                    Run RMS and AIR Vendor Catastrophe models and comparing against RenaissanceRe&apos;s internal
                     catastrophe model.
                 </ListItem>
                 <ListItem mb={2}>
@@ -47,7 +47,7 @@ const RenaissanceRe = () => {
                     Creating scripts for document generation and automated reporting.
                 </ListItem>
                 <ListItem mb={2}>
-                    Creating usability and convinience scripts to manage large data volumes from past deal submissions.
+                    Creating usability and convenience scripts to manage large data volumes from past deal submissions.
                 </ListItem>
             </UnorderedList>
         </Box>
