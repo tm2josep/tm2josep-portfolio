@@ -11,10 +11,10 @@ const RenaissanceRe = () => {
             <Flex gap="2" wrap="wrap" direction="row" alignItems="baseline">
                 <SeparatedGroup separator="|">
                     <DetailInfo variant="important">
-                        Coporate Risk Analyst
+                        Portfolio Analyst
                     </DetailInfo>
                     <DetailInfo>Crow Lane, Hamilton, Bermuda</DetailInfo>
-                    <DetailInfo>Jun 2023 - Present</DetailInfo>
+                    <DetailInfo>Jun 2023 - Sep 2023</DetailInfo>
                 </SeparatedGroup>
             </Flex>
             <UnorderedList mt={2}>
