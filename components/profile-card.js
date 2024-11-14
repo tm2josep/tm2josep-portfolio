@@ -1,4 +1,5 @@
-import { Box, Heading, chakra, Image, Container } from "@chakra-ui/react"
+import { Box, Text, Heading, chakra, Image, Container } from "@chakra-ui/react"
+import Section from "./section"
 
 const ProfileImage = chakra(Image, {
     shouldForwardProp: prop => ["width", "height", "src", "alt"].includes(prop)
@@ -11,7 +12,10 @@ const ProfileCard = () => {
                 <Heading as="h2" variant="page-title">
                     Mammen Joseph
                 </Heading>
-                <p>Python | SQL | Javascript</p>
+                <Section delay={0.3}>
+                    <Text>BASc. Mechanical Eng. University of Waterloo</Text>
+                    <Text>Python | SQL | Javascript</Text>
+                </Section>
             </Box>
             <Box
                 flexShrink={0}
