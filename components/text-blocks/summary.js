@@ -1,5 +1,4 @@
 import { Heading, Text, Box } from "@chakra-ui/react"
-import Section from "../section"
 
 const Summary = () => {
     return (
